@@ -7,64 +7,7 @@ body{
   padding: 0;
   margin:0;
   background-color: #f4f4f4 ;
-}
-/* sidebar */
-aside#sidebar{
-  float: right;
-  width:30%;
-  margin-top: 10px;
-  height: 255px;
-  }
-#showcase h1{
-  text-align: center;
-  margin-top: 100px;
-  margin-bottom: 15px;
-}
-#showcase p{
-  font-size: 20px;
-}
-/* newsletter */
-#newsletter{
-  background-color: #35424A;
-  color:#ffffff;
-  padding: 15px;
-}
-#newsletter h1{
-  float: left;
-}
-#newsletter form{
-  float:right;
-  margin-top: 15px;
-}
-#newsletter input[type="email"]{
-  padding: 4px;
-  height: 25px;
-  width: 250px;
-}
-/* boxes */
-#boxes {
-  margin-top: -9px;
-  margin-right: -285px
-}
-#boxes .box{
-  float: left;
-  width: 23%;
-  text-align: center;
-  padding:1%;
-}
-#boxes .box img{
-  
-  width: 30%;
-  
-}
-@media only screen and (min-width: 600px) {
-  #boxes .box {
-    float: left;
-    width: 44%;
-    text-align: center;
-    padding: 1%;
-}
-}
+  min-height: 400px;
 }
 ul{
   margin: 0;
@@ -80,8 +23,6 @@ ul{
 .container{
    margin:auto; /*moves items to the center */
    width: 80%;
-   margin-left: 26px;
-   margin-right: 0;
    /* hide the item in case of overflow from div instead of scrolbar */
    overflow: hidden;
 }
@@ -139,7 +80,47 @@ header a:hover:not(.headerlink){
   text-align: center;
   color: #ffffff;
 }
-
+#showcase h1{
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 15px;
+}
+#showcase p{
+  font-size: 20px;
+}
+/* newsletter */
+#newsletter{
+  background-color: #35424A;
+  color:#ffffff;
+  padding: 15px;
+}
+#newsletter h1{
+  float: left;
+}
+#newsletter form{
+  float:right;
+  margin-top: 15px;
+}
+#newsletter input[type="email"]{
+  padding: 4px;
+  height: 25px;
+  width: 250px;
+}
+/* boxes */
+#boxes{
+  margin-top: 20px;
+}
+#boxes .box{
+  float: left;
+  width: 23%;
+  text-align: center;
+  padding:1%;
+}
+#boxes .box img{
+  
+  width: 30%;
+  
+}
 footer{
   padding: 10px;
   background-color: #e8491d;
@@ -147,8 +128,22 @@ footer{
   margin-top: 20px;
   color: #ffffff;
 }
-
+/* sidebar */
+aside#sidebar{
+float: right;
+width:30%;
+margin-top: 10px;
+}
 article#main-col{
 float: left;
 width: 60%;
+}
+@media only screen and (max-width: 800px) {
+  #boxes .box {
+    float: left;
+    width: 44%;
+    text-align: center;
+    height: 226px;
+    padding: 1%;
+}
 }
